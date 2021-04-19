@@ -8,7 +8,7 @@ import sys
 def solve(meal_cost, tip_percent, tax_percent):
     tip = (tip_percent/100) * meal_cost
     tax = (tax_percent/100) * meal_cost
-    total = int(meal_cost + tip + tax)
+    total = int(round(meal_cost + tip + tax))
     print(total)
     
 if __name__ == '__main__':
